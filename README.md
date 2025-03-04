@@ -1,14 +1,13 @@
 # HTML-only Dependent Dropdowns
 
-This is a little utility that allows you to create dependent dropdowns (`<select>` elements) in your forms with only HTML data attributes.
+This is a little utility that allows you to create dependent dropdowns (`<select>` elements whose available `<option>`s are dependent on the value of other `<select>`s) in your forms with only HTML data attributes.
 
 ## Installation
-Just download the raw source and vendor it into your project. Don't forget to 
-include the file in your `<head>` (or at the bottom of the `<body>`).
+Just copy and paste [the source](https://raw.githubusercontent.com/codyclay88/dependent-dropdowns/refs/heads/main/src/dependent-dropdowns.js) into your project. 
 
 ## Usage
-Add the `data-depends-on` attribute to the dependent dropdowns.
-The value of this attribute should be the name of the dropdown that the current dropdown depends on.
+Add the `data-depends-on` attribute to a `<select>` element that is dependent on another `<select>` element.
+The value of this attribute should be the name (meaning, the value of the `name` attribute) of the `<select>` that the current dropdown depends on.
 
 Then, add the `data-dependent-value` attribute to the options in the dependent dropdown.
 The value of this attribute should be the value of the dropdown that the option depends on.
