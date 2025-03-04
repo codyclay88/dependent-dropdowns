@@ -46,6 +46,7 @@ If the selected `<option>` of the dependent `<select>` is no longer available as
 ## Tid-bits:
 - The dependent dropdowns must exist within the same form. 
 - Dependent `<select>` can only depend on other `<select>` elements.
+- A lot of the implementation for v2 was borrowed from [fixi.js](https://github.com/bigskysoftware/fixi/blob/master/fixi.js), which managed to solve a much harder problem than I am in much fewer lines of code, and I learned a lot from it.
 
 ## Pull Requests
 I'd love feedback and help in making this better. I'm a bit naive in the client side JavaScript world (I've spent most of my career "frameworking" with Angular and React, so naturally I have very little clue how to do much Vanilla JavaScript in the browser). 
