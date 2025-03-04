@@ -2,6 +2,13 @@
 
 This is a little utility that allows you to create dependent dropdowns (`<select>` elements whose value and available `<option>`s are dependent on the value of another `<select>`) in your forms with only HTML data attributes, without writing any extra JavaScript.
 
+There are currently two versions:
+The original uses event delegation at the document level to listen for all change events, and if the event target 
+has a dependent dropdown, then the dependent is updated.
+The second version uses a mutation observer to setup event handlers on source dropdowns as they are added to the DOM,
+rather than delegating the event handler to the document. 
+This second version also will update dependent dropdowns as soon as they are rendered, rather than waiting for a change event.
+
 ## Installation
 Just copy and paste [the source](https://raw.githubusercontent.com/codyclay88/dependent-dropdowns/refs/heads/main/src/dependent-dropdowns.js) into your project. 
 
