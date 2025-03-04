@@ -16,7 +16,7 @@ When the value of the dependent `<select>` changes,
 this script will show/hide the `<option>`s in the dependent dropdown based on whether the 
 selected value matches the value of the `data-dependent-value` attribute.
 
-If the selected `<option>` of the dependent `<select>` does is no longer available as a result of the source `<select>` changing, then the value of the dependent dropdown is cleared and the `selected` attribute of the `<option>` is removed. 
+If the selected `<option>` of the dependent `<select>` is no longer available as a result of the source `<select>` changing, then the value of the dependent dropdown is cleared and the `selected` attribute of the `<option>` is removed. 
 
 ## Example:
 ```html
