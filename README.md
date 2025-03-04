@@ -1,10 +1,10 @@
-# Dependent Dropdowns
+# HTML-only Dependent Dropdowns
 
-This script allows you to create dependent dropdowns in your forms.
+This is a little utility that allows you to create dependent dropdowns (`<select>` elements) in your forms with only HTML data attributes.
 
 ## Installation
 Just download the raw source and vendor it into your project. Don't forget to 
-include the file in your <head> (or at the bottom of the <body>).
+include the file in your `<head>` (or at the bottom of the `<body>`).
 
 ## Usage
 Add the `data-depends-on` attribute to the dependent dropdowns.
@@ -34,3 +34,11 @@ this script will show/hide the options in the dependent dropdown based on the se
   </select>
 </form>
 ```
+
+## Tid-bits:
+- The event listener is set up at the document level, and uses the 'change' event.
+- The dependent dropdowns must exist within the same form. 
+- Dependent `<select>` can only depend on other `<select>` elements.
+
+## Pull Requests
+I'd love feedback and help in making this better. I'm a bit naive in the client side JavaScript world (I've spent most of my career "frameworking" with Angular and React, so naturally I have very little clue how to do much Vanilla JavaScript in the browser). 
